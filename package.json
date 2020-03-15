@@ -1,0 +1,34 @@
+{
+  "name": "yup-config",
+  "version": "1.0.0",
+  "description": "A demo of using Yup to handle configuration variables",
+  "scripts": {
+    "good": "HOST=example.com PORT=8080 node dist/goodcode.js",
+    "bad": "HOST=example.com PORT=x node dist/goodcode.js",
+    "missing": "HOST=example.com node dist/goodcode.js",
+    "inj-good": "HOST=example.com PORT=8080 node dist/inject.js",
+    "inj-bad": "HOST=example.com PORT=x node dist/inject.js",
+    "inj-missing": "HOST=example.com node dist/inject.js",
+    "bad-good": "HOST=example.com PORT=8080 node dist/badcode.js",
+    "bad-bad": "HOST=example.com PORT=x node dist/badcode.js",
+    "bad-missing": "HOST=example.com node dist/badcode.js",
+    "build": "tsc",
+    "watch": "tsc --watch"
+  },
+  "keywords": [
+    "yup",
+    "configuration"
+  ],
+  "author": "Michael Lorton",
+  "license": "MIT",
+  "dependencies": {
+    "typed-inject": "^2.1.1",
+    "yup": "^0.28.3"
+  },
+  "devDependencies": {
+    "@types/node": "^13.9.1",
+    "@types/yup": "^0.26.32",
+    "eslint": "^6.8.0",
+    "typescript": "^3.8.3"
+  }
+}
